@@ -65,7 +65,7 @@ var lista =
 
   lista.forEach(function (ele){
     document.getElementById("mostrarlos10")
-    .innerHTML+=ele.title;
+    .innerHTML+= "<ul> <li>"+ele.title+"</li></ul>";
   })
 function mostrarInfo(){
   var cajita = document.getElementById("inputTarea");
