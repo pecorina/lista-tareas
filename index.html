@@ -7,32 +7,25 @@
 <body>
 
 <center><h1>Lista De Tareas</h1></center>
-<h3>Deberes en mi casa</h3>
-<<ul>
-	<li>darle comida a mis gatos y dejarle su arenero limpio
-	<input type="checkbox" name="transporte" value="1"></li>
-	<li>lavar mi ropa, por lo menos dos veces a la semana
-	<input type="checkbox" name="transporte" value="1"></li>
-	<li>lista 3
-	<input type="checkbox" name="transporte" value="1"></li>
-	<li>lista 4
-	<input type="checkbox" name="transporte" value="1"></li>
-</ul>
-
-<input type="checkbox" name="transporte" value="1">lista 1
-
-<br>
-
-<input type="checkbox" name="transporte" value="2" checked>lista 2
-
-<br>
-
-<input type="checkbox" name="transporte" value="3">lista 3
+<h3>Deberes personales</h3>
 
 
-<div class="col m12 botoncillo">
-	<button onclick="botonInfo()">boton</button>
-</div>
+<div class="container">
+
+        <form class="form-signin">
+           
+            <label for="inputTarea" class="sr-only">
+          ingresa otra tarea
+        </label>
+            <input type="text" id="inputTarea" class="form-control" placeholder="Ingrese Tarea" autofocus="">
+            
+            <button class="btn btn-lg btn-primary btn-block submit-btn" type="submit" onclick="mostrarInfo(); return false">Check</button>
+        </form>
+    </div>
+
+
+
+
 	
 </body>
 </html>
