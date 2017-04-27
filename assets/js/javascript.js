@@ -61,23 +61,14 @@ var lista =
     "title": "illo est ratione doloremque quia maiores aut",
     "completed": true
   }
+  ]
 
-function botonInfo(){
-  var info = document.getElementById('lista');
-  var enlacesId = document.getElementsByTagName('id')
-  
-  var contador = 0;
-  for (var i = 0; i < enlacesId.length[10]; i++){
-    if(enlacesId[i].href ){
-    contador++; //contador = contador + i
-  }
+  lista.forEach(function (ele){
+    document.getElementById("mostrarlos10")
+    .innerHTML+=ele.title;
+  })
+function mostrarInfo(){
+  var cajita = document.getElementById("inputTarea");
+  var muestra = document.getElementById("mostarLista");
+  muestra.innerHTML+=cajita.value;
 }
-
-
-
-info.innerHTML = 'El total de tareas es: <span class="resultado">' + 
-enlaces.length + '</span> <br> El total de párrafos es: ' + parrafos.length + 
-'<br> Los enlaces que llevan a Laboratoria son: '+ contador;
-}
-
-
